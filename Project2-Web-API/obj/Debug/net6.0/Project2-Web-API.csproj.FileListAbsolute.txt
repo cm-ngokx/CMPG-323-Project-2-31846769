@@ -552,3 +552,9 @@ C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\P
 C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\obj\Debug\net6.0\Project2-Web-API.pdb
 C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\obj\Debug\net6.0\Project2-Web-API.genruntimeconfig.cache
 C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\obj\Debug\net6.0\ref\Project2-Web-API.dll
+C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
