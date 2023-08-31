@@ -22,10 +22,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-
-var connectionstring = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<cmpg323project2DBContext>(options => options.UseSqlServer("name=ConnectionStrings:ConnStr"));
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<cmpg323project2DBContext>(options => options.UseSqlServer("name = connectionStrings:ConnStr"));
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:ConnStr"));
 
 // For Identity  
@@ -113,8 +111,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
+else
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Project2-Web-API");
+        options.RoutePrefix = string.Empty;
+    });
+}
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
