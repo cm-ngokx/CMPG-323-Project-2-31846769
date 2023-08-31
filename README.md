@@ -1,20 +1,33 @@
 # CMPG-323-Project-2-31846769
-//I started my project on long time ago please check the history to conform this due to github challenge i had to create a new readme file.
+//I started my project on long time ago please check the history to conform this. Due to github challenge i had to create a new readme file.
 ## Project 
 in this project an API is created that contains a get, put, patch, push and etc.
-this 
+This API is hosted on Azure. 
+
+### Procedure for Accessing Azure Project2-Web-API:
+
+#### Navigate to the Azure Homepage:
+Begin by opening a web browser and accessing the official Azure home page.
+
+#### Access Project2-Web-API:
+Proceed to locate and access the designated Project2-Web-API section.
+
+#### Select the Default Domain:
+Within the Project2-Web-API interface, identify the 'Domains' option and proceed to select the 'Default Domain' from the available choices.
+
+#### Registration and Authentication:
+Initiate the registration process by utilizing the 'Post Authenticate' registration method. During registration, select a preferred username and password.
+
+#### Generate an Authentication Token:
+Utilize the 'Authenticate Login Post' functionality. Execute the process and obtain an authentication token. Copy the resulting token, excluding any quotation marks.
+
+#### Authorization Configuration:
+Access the uppermost section of the web page and locate the 'Authorize' option. In the provided field, input the term "Bearer" followed by the copied authentication token. Confirm the input by clicking the 'Authorize' button located below.
+
+By successfully completing these steps, you will gain authenticated access to the system, allowing you to utilize all available endpoints and methods within the Project2-Web-API environment.
+
+ 
 ## List of all Endpoints
-### Get method that retrives all customers, Orders, Products and OrderDetails
-
-### Get method that retrives one customer, Order, Product and OrderDetails
-
-### Post method that will create a new customer, order, product and orderDetail
-
-### Patch method that will update an existing customer, order, product and orderDetail
-
-### Delete method that will delete an existing customer, order, product and orderDetail
-
-### Private method in the API for customer, order, product and orderDetail
 
 ## Reference List
 
