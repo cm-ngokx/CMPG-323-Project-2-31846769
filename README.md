@@ -28,6 +28,31 @@ By successfully completing these steps, you will gain authenticated access to th
 
  
 ## List of all Endpoints
+GET method that retrieves all Customer entries from the database
+GET method that will retrieve one Customer from the database based on the ID parsed through
+POST method that will create a new Customer entry on the database
+PATCH method that will update an existing Customer entry on the database
+DELETE method that will delete an existing Customer entry on the database
+
+GET method that retrieves all orders entries from the database
+GET method that will retrieve one orders from the database based on the ID parsed through
+POST method that will create a new orders entry on the database
+PATCH method that will update an existing orders entry on the database
+DELETE method that will delete an existing orders entry on the database
+GET method that retrieves all orders for a specific customer (based on the customer ID that is parsed through)
+
+GET method that retrieves all products entries from the database
+GET method that will retrieve one products from the database based on the ID parsed through
+POST method that will create a new products entry on the database
+PATCH method that will update an existing products entry on the database
+DELETE method that will delete an existing products entry on the database
+GET method that retrieves all products for a specific order (based on the order ID that is parsed through)
+
+GET method that retrieves all OrderDetails entries from the database
+GET method that will retrieve one OrderDetails from the database based on the ID parsed through
+POST method that will create a new OrderDetails entry on the database
+PATCH method that will update an existing OrderDetails entry on the database
+DELETE method that will delete an existing OrderDetails entry on the database
 
 ## Reference List
 
