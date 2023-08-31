@@ -10,5 +10,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>Project2_Web_API.Models.cmpg323project2DBContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\Cherish\Documents\CMPG\CMPG 3year\2nd semester\Cmpg 323\Project2_Repo\Project2-Web-API\Properties\PublishProfiles\Project2-Web-API20230831030110 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project2_Web_API.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 
 namespace Project2_Web_API.Controllers
@@ -32,6 +34,32 @@ namespace Project2_Web_API.Controllers
                 return NotFound();
             }
             return await _context.Customers.ToListAsync();
+        }
+
+        // GET: api/Customers/{customerId}/Orders
+        [HttpGet("{customerId}/Orders")]
+        public async Task<ActionResult<IEnumerable<Order>>> GetCustomerOrders(short customerId)
+        {
+            var customer = await _context.Customers.FindAsync(customerId);
+
+            if (customer == null)
+            {
+                return NotFound();
+            }
+
+            var orders = await _context.Orders
+                .Where(order => order.CustomerId == customerId)
+                .ToListAsync();
+
+            // Prevent circular references during JSON serialization
+            var serializerOptions = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve
+            };
+
+            var serializedOrders = JsonSerializer.Serialize(orders, serializerOptions);
+
+            return Content(serializedOrders, "application/json");
         }
 
         // GET: api/Customers/5

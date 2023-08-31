@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project2_Web_API.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 
 namespace Project2_Web_API.Controllers
@@ -32,6 +34,34 @@ namespace Project2_Web_API.Controllers
               return NotFound();
           }
             return await _context.Orders.ToListAsync();
+        }
+
+        // GET: api/Orders/{orderId}/Products
+        [HttpGet("{orderId}/Products")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetOrderProducts(short orderId)
+        {
+            var order = await _context.Orders
+                .Include(o => o.OrderDetails)
+                .ThenInclude(od => od.Product)
+                .FirstOrDefaultAsync(o => o.OrderId == orderId);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            var products = order.OrderDetails.Select(od => od.Product).ToList();
+
+            // Create JsonSerializerOptions with a custom converter
+            var serializerOptions = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve,
+                WriteIndented = true // This is optional, for better readability
+            };
+
+            var serializedProducts = JsonSerializer.Serialize(products, serializerOptions);
+
+            return Content(serializedProducts, "application/json");
         }
 
         // GET: api/Orders/5
