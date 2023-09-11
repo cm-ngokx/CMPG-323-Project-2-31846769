@@ -6,6 +6,9 @@ This API is hosted on Azure.
 
 ### Procedure for Accessing Azure Project2-Web-API:
 
+#### Link to API on Azure:
+https://project2-web-api20230831030110.azurewebsites.net/index.html
+
 #### Navigate to the Azure Homepage:
 Begin by opening a web browser and accessing the official Azure home page.
 
